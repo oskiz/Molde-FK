@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400;1,900&display=swap');
+
+#main-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+}
+
+#header{
+    height: 600px;
+}
+
+#video1 {
+    width: 100%;
+}
+
+#lag {
+    list-style-position: inside;
+}
+
+html {
+    background-image: url("Aker%20Stadion%20fra%20Seilet%20-%20liggende.jpg");
+    background-size: cover; /* Juster etter behov */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Valgfritt: Dette holder bakgrunnen fast mens du blar */
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a:visited {
+    text-underline: none;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+nav {
+    background-color: #0068B0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+article {
+    background-color: white;
+    padding: 5px;
+}
+
+aside {
+    background-color: #0068B0;
+    padding: 5px;
+}
+
+main {
+    background-color: white;
+    padding: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#news1 {
+    background: #0068B0;
+}
+
+@media screen and (min-width: 800px) {
+    div#main-container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    nav {
+        grid-column-start: 3;
+        grid-column-end: -1;
+        justify-content: right;
+    }
+
+    article {
+        grid-column: span 3;
+    }
+
+    main {
+        grid-column: 1 / 7;
+    }
+
+    aside {
+        grid-column: 7 / 8;
+        grid-row: 2 / 4;
+    }
+
+    a {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 250px;
+    }
+
+    #logo {
+        width: 200%;
+        margin: 10px;
+    }
+
+    #video {
+        grid-row: 3/3;
+        grid-column: -8/-2;
+    }
+
+    #video1 {
+        width: 100%;
+    }
+
+    #lagnavn {
+        font-size: 100px;
+    }
+
+    #drakt {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
