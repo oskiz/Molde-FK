@@ -1,50 +1,195 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,400;1,900&display=swap');
+
+#main-container {
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
 }
 
-header {
-    background-color: #004d99;
-    color: white;
-    text-align: center;
-    padding: 20px;
+#header {
+    height: 600px;
 }
 
-.news {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+#video1 {
+    width: 100%;
 }
 
-h2 {
-    color: #004d99;
-    font-size: 50px;
+#lag {
+    list-style-position: inside;
+    padding: 10px;
+}
+
+#lag li {
+    margin-bottom: 10px;
+}
+
+
+html {
+    background-image: url("img/Aker%20Stadion%20fra%20Seilet%20-%20liggende.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h1 {
+    font-size: 70px;
 }
 
 .center {
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
-footer {
-    background-color: #004d99;
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
     color: white;
-    text-align: center;
-    padding: 10px;
+    font-size: 10px;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
-#news1 {
-    text-align: left;
+#video {
+    display: block;
+    margin: 0;
+    width: 100%;
 }
 
-#norgesmestere{
-    width: 50%;
+
+nav {
+    background-color: #0068B0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+}
+
+article {
+    padding: 5px;
+}
+
+#video {
+    padding: 0px;
+}
+
+
+aside {
+    background-color: #0068B0;
+    padding: 5px;
+}
+
+
+main {
+    background-color: white;
+    padding: 5px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#lagnavn {
+    line-height: 150%;
+}
+
+#lag {
+    line-height: 100%;
+}
+
+#news1 {
+    background: #0068B0;
+    padding: 10px;
+}
+
+#news2 {
+    background-color: white;
+}
+
+@media screen and (min-width: 800px) {
+    #main-container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    nav {
+        grid-column-start: 3;
+        grid-column-end: -1;
+        justify-content: center;
+    }
+
+    article {
+        grid-column: span 3;
+    }
+
+    main {
+        grid-column: 1 / 7;
+    }
+
+    aside {
+        grid-column: 7 / 8;
+        grid-row: 2 / 4;
+    }
+
+    a {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 250px;
+    }
+
+    #logo {
+        width: 200%;
+        margin: 10px;
+    }
+
+    #video {
+        grid-row: 3/3;
+        grid-column: -8/-2;
+    }
+
+    #video1 {
+        width: 100%;
+    }
+
+    #lagnavn {
+        font-size: 100px;
+    }
+
+    #drakt {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
 }
